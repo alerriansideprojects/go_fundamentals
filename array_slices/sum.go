@@ -9,3 +9,7 @@ func Sum(numbers []int) int {
 
 	return sum
 }
+
+func SumAll(slicesToSum ...[]int)(sums []int) {
+	return
+}
