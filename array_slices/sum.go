@@ -10,6 +10,11 @@ func Sum(numbers []int) int {
 	return sum
 }
 
-func SumAll(slicesToSum ...[]int)(sums []int) {
-	return
+func SumAll(numbersToSum ...[]int) []int {
+	var sums []int
+	for _, numbers := range numbersToSum {
+		sums = append(sums, Sum(numbers))
+	}
+
+	return sums
 }
