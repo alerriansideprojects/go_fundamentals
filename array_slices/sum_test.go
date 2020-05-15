@@ -1,6 +1,8 @@
 package main
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestSum(t *testing.T) {
 	numbers := [5]int{1, 2, 3, 4, 5}
@@ -9,6 +11,6 @@ func TestSum(t *testing.T) {
 	want := 15
 
 	if got != want {
-		t.Errorf("Got: %d, Want: %d Given: %v", got, want, numbers)
+		t.Errorf("\nGot: %d\nWant: %d\nGiven: %v", got, want, numbers)
 	}
 }
